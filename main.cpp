@@ -1,6 +1,14 @@
 #include <iostream>
+#include "functions.h"
+using namespace std;
+
+
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    Inventory jaden;
+
+    jaden.add_item("wallet", 1);
+    jaden.add_item("Pistol", 1);
+    jaden.add_item("ammo", 100);
+    jaden.check_inventory();
 }
